@@ -5,11 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
+	<title>Барбершоп</title>
 </head>
 <body>
-	<header class="header">
+
+	 <header class="header">
 		<div class="header__wrapper">
       <div class="header__inner container">
 				<div class="header__left">
@@ -17,7 +19,7 @@
 					<div class="header__menu">
 						<div class="header__logo">
 							<a href="#">
-							<img src="./img/logo/logo (1).svg" alt="Barbershop" class="header__logo--pic">
+							<img src="./img/logo/logo(1).svg" alt="Barbershop" class="header__logo--pic">
 						</a>
 						</div>
 						<ul class="menu__list">
@@ -32,25 +34,30 @@
 				</div>
 				<div class="header__rigth">
 					<button class="site__cart ">
-						<i class="fa-regular fa-cart-shopping"></i>Корзина</button>
+						<i class="fa-regular fa-cart-shopping"></i>
+						<span class="site__cart--total">0</span>
+						<span class="site__cart--descr">Корзина</span>
+					</button>
+					
 				</div>
 			</div>
 		</div>
 	</header>
+	 
 	<main class="main">
 		<section class="product__care container">
 			<div class="mini__nav--container">
 			<h1 class="main__title">Средства для ухода</h1>
 			<ul class="mini__nav--list">
-				<div class="mini__nav--list-item"><a href="#" class="mini__nav__list--item-link">Главная</a></div>
-				<div class="mini__nav--list-item"><a href="#" class="mini__nav__list--item-link">Магазин</a></div>
-				<div class="mini__nav--list-item">Средство для ухода</div>
+				<li class="mini__nav--list-item"><a href="#" class="mini__nav__list--item-link">Главная</a></li>
+				<li class="mini__nav--list-item"><a href="#" class="mini__nav__list--item-link">Магазин</a></li>
+				<li class="mini__nav--list-item">Средство для ухода</li>
 			</ul>
 		</div>
     
 		<div class="product__box">
 			<div class="first__container">
-				<form method="" action=""> 
+				<form method="get" action="php"> 
 		<fieldset class="producer__fieldset">
 			<legend class="fieldset__title">производители</legend>
 		<div class="producer__fieldset--box">
@@ -82,7 +89,7 @@
 			<legend class="fieldset__title">группы товаров</legend>
 			<div class="product__fieldset--box">
 				<input type="radio" id="ShavingAccessories" name="product-group" >
-				<label for="ShavingAccessories">Бритвенные принадлежности</label>
+				<label for="ShavingAccessories">Бритвы</label>
 			</div>
 			<div class="product__fieldset--box">
 				<input type="radio" id="careProduct" name="product-group" checked >
@@ -96,89 +103,78 @@
 		<button class="form__btn">Показать</button>
 		</form>
 	</div>
+
 	<div class="second__container">
+
     <div class="product__container">
 			<a href="#">
-			<img src="./img/photo.png" alt="bag" class="product__image">
-			<h2 class="product__title">Набор для путешествий<br>	«Baxter of California»</h2>
-		</a>
-				<p class="product__descr">
-					<span>
-					2 900 ₽
-				</span>
+			 <img src="./img/photo.png" alt="bag" class="product__image">
+			 <h2 class="product__title">набор для путешествий<br>	«Baxter of California»</h2>
+		  </a>
+		   <div class="product__price">
+				   <p >2 900₽	</p>
 					<button class="product__btn">купить</button>
-				</p>
-			
-			</img>
+			 </div>
 		</div>
+
 		<div class="product__container">
 		 <a href="#">
-			<img src="./img/photo (3).png" alt="" class="product__image">
+			<img src="./img/photo(3).png" alt="" class="product__image">
 			<h2 class="product__title">Увлажняющий кондиционер<br> «Baxter of California»</h2>
 		</a>
-				<p class="product__descr">
-				 <span>
-					750 ₽
-				</span>
+		<div class="product__price">
+				  <p>750 ₽</p>
 					<button class="product__btn">купить</button>
-				</p>
-			</img>
+    </div> 
 		</div>
+
 		<div class="product__container">
-			<a href="">
-			<img src="./img/photo (4).png" alt="" class="product__image">
+			<a href="#">
+			<img src="./img/photo(4).png" alt="" class="product__image">
 			<h2 class="product__title">Гель для волос <br>«SUAVECITO»</h2>
 		</a>
-
-				<p class="product__descr">
-			   <span>
-					290 ₽
-				</span>
-					<button class="product__btn">купить</button>
-				</p>
-			</img>
+		<div class="product__price">
+			<p >	290 ₽</p>
+			<button class="product__btn">купить</button>
+   </div> 
 		</div>
+
 		<div class="product__container">
-			<a href="">
-			<img src="./img/photo (7).png" alt="" class="product__image">
+			<a href="#">
+			<img src="./img/photo(7).png" alt="" class="product__image">
 			<h2 class="product__title">Глина для укладки волос<br> «American crew»</h2>
 		</a>
-				<p class="product__descr">
-		       <span>
-					500 ₽
-				</span>
-					<button class="product__btn">купить</button>
-				</p>
-			</img>
+		<div class="product__price">
+			<p >		500 ₽</p>
+			<button class="product__btn">купить</button>
+   </div> 
+
 		</div>
 		<div class="product__container">
-			<a href="">
-			<img src="./img/photo (11).png" alt="" class="product__image">
+			<a href="#">
+			<img src="./img/photo(11).png" alt="" class="product__image">
 			<h2 class="product__title">Гель для волос <br>«AMERICAN CREW»</h2>
 		</a>
-				<p class="product__descr">
-		     <span>
-					300 ₽
-				</span>
-					<button class="product__btn">купить</button>
-				</p>
-			</img>
+		<div class="product__price">
+			<p >300 ₽</p>
+			<button class="product__btn">купить</button>
+   </div> 
 		</div>
+
 		<div class="product__container">
-			<a href="">
-			<img src="./img/photo (12).png" alt="" class="product__image">
-			<h2 class="product__title">Набор для бритья <br>«Baxter of California»</h2>
+			<a href="#">
+			<img src="./img/photo(12).png" alt="" class="product__image">
+			<h2 class="product__title">набор для бритья <br>«Baxter of California»</h2>
 		</a>
-				<p class="product__descr">
-	        <span>
-					3 900 ₽
-				</span>
-					<button class="product__btn">купить</button>
-				</p>
-			</img>
+		<div class="product__price">
+			<p >3 900 ₽</p>
+			<button class="product__btn">купить</button>
+   </div> 
 		</div>
+
 	</div>
 	</div>
+	
 	<div class="page__box">
 		<ul class="page__box--list">
 			<li class="page__box--list-item"><a class="page__box--list-link" href="#">1</a></li>
@@ -196,8 +192,8 @@
 				<div class="footer__contacts">
          <p class="footer__contacts--descr">
 					БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-          <address>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</address>
-          <a class="address__link" href="#"> КАК НАС НАЙТИ?</a><br>
+          <address>АДРЕС: Г.  санКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</address>
+          <a class="address__link" href="#">  кАК наС НАЙТИ?</a><br>
           <a class="tel__link" href="tel:78126660266">ТЕЛЕФОН: +7 (812) 666-02-66</a>
 				 </p>
 				</div>
@@ -216,5 +212,7 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="index.js"></script>
 </body>
 </html>
